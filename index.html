@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="manipulate">
+    <marquee class="ani" direction="right">
+    KINDLY ENTER YOUR NAME
+  </marquee >
+    <br>
+  <input id="nam"  type="text">
+  </div>
+  <p class="tton">
+    <button class="firstbutton"onclick="pmon()"class="" >click here</button>
+  </p>
+  <p class="textarea" id="sta"></p>
+  <script>
+    function pmon(){
+var on=0;
+if(on=1){
+massage="    is Gay";
+var x = document.getElementById("nam").value;
+}
+
+document.getElementById( "sta").innerHTML=x+massage;
+ //document.getElementById( "sta").innerHTML=massage;
+ }
+   </script>
+   <style>
+    .firstbutton{
+      background: red;
+      font-size: larger;
+      align-self: center;
+    }
+    .tton{
+      align-items: center;
+  background: blue;
+  font-size: larger;
+  font-style: oblique;
+  text-align: center;
+    }
+    .textarea{
+      lign-items: center;
+      align-items: center;
+  background:yellowgreen;
+  font-size: larger;
+  font-style: oblique;
+  color: black;
+  text-align: center;
+
+    }
+    .manipulate{
+      align-items:center;
+  background:yellow;
+  font-size: larger;
+  font-style: oblique;
+  text-align: center;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    }
+    
+
+   </style>
+  
+</body>
+
+</html>
